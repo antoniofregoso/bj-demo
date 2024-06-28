@@ -8,9 +8,6 @@ const persistConfig = {
     storage
   };
 
-  const rootReducer = {
-    home: userReducer,
-  };
 
   const persistedReducer = persistReducer(persistConfig, homeSlice);
 

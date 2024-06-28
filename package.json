@@ -4,6 +4,12 @@
   "description": "Demo app of the buyer journey js framework",
   "main": "index.js",
   "scripts": {
+    "prod": "esbuild src/index.js --bundle --minify  --outfile=public/index.js",
+    "build": "esbuild src/index.js --bundle  --outfile=public/index.js",
+    "serve": "esbuild src/index.js --bundle  --outfile=public/index.js  --servedir=public",
+    "watch": "esbuild src/index.js --bundle  --outfile=public/index.js --watch --serve-fallback=public/index.html --servedir=public",
+    "scss": "sass --load-path=node_modules src/app/scss/index.scss public/assets.css",
+    "start": "npm-run-all scss serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

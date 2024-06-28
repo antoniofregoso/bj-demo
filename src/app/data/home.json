@@ -1,0 +1,58 @@
+{
+    "props":{
+        "id":"home",
+        "Cache":false,
+        "events":{
+            "trackViewed":[],
+            "leavingapp":true,
+            "leavedapp":true
+        },
+        "title":{
+            "es":"Somos tu Agencia de Ventas|Conference Corporativo",
+            "en":"We are your Sales Agency|Conference Corporativo",
+            "fr":"Nous sommes votre agence commerciale|Conference Corporativo"
+
+        },
+        "description":{
+            "es":"Optimizamos tu Liquidez y Liberamos tus Almacenes, Vendemos tus Saldos y tus Activos Inmovilizados y Vendemos por Consignación o te Compramos Lotes y Remates",
+            "en":"We Optimize Your Liquidity and Release Your Warehouses, We Sell Your Balances and Your Immobilized Assets and We Sell by Consignment or We Buy Lots and Auctions from You",
+            "fr":"Nous optimisons votre liquidité et libérons vos entrepôts, nous vendons vos soldes et vos actifs immobilisés et nous vendons en consignation ou nous achetons des lots et des enchères chez vous"
+        },
+        "image":"https://docs-conference.s3.us-east-2.amazonaws.com/images/bigventas_social.png",
+        "type":"business.business",
+        "canonical":"https://promo.santerra.com.mx/",
+        "classList":[],
+        "components":[
+            {
+                "id":"header",
+                "brand":{
+                    "src":"https://www.conference.com.mx/web/image/website/3/logo/Conference"
+                },
+                "i18n":{
+                    "lang":{"es":"🇲🇽","en":"🇺🇸","fr":"🇫🇷"}
+                }
+            },
+            {
+                "id":"footer",
+                "brand":{
+                    "src":"https://www.conference.com.mx/web/image/website/3/logo/Conference"
+                },
+                "content":{
+                    "text":{
+                        "es":"Carretera Picacho Ajusco 533, Tlalpan. CDMX",
+                        "en":"Carretera Picacho Ajusco 533, Tlalpan. CDMX",
+                        "fr":"Carretera Picacho Ajusco 533, Tlalpan. CDMX"
+                    }
+                },
+                "privacyPolicy":{
+                    "text":{
+                        "es":"Política de Privacidad",
+                        "en":"Privacy Policy",
+                        "fr":"Politique de confidentialité"
+                    },
+                    "url":"https://www.conference.com.mx/privacy-policy"
+                }
+            }
+        ]
+    }
+}

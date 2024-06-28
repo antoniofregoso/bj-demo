@@ -8,10 +8,9 @@ import '@buyerjourney/bj-core/src/bj.css';
 import {App} from "./App";
 
 loading({color:"is-dark", direction:"is-right-to-left"});
-
+console.log(store.getState())
 persistor.subscribe(()=>{
-    const rehydratedState = store.getState();
-    
-    App.init();
+    const rehydratedState = store.getState();    
+    App.run();
     whithAnimations();
 })
