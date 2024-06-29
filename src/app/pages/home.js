@@ -6,27 +6,31 @@ import data from "../data/home.json";
 
 export function home(req, router){
 
+    let currentValue = store.getState();
+
+    console.log(currentValue)
+
     let template =`
     <page-header id="header"></page-header>
     <page-footer id="footer"></page-footer>
     `
 
-    let currentValue = store.getState();
     data.context = currentValue.context;
     page =  new AppPage(data, template);
+    
 
     const pageEvents = {
         handleEvent: (e) => {
             if (e.type==="user:select-lang"){
-                console.log('Hayyyyy')
                 store.dispatch(setLanguaje(e.detail));
+            }
+            if (e.type==="user:select-theme"){
+                store.dispatch(setTheme(e.detail));
             }
 
         }
     };
 
-    
-    page.eventsToListen(["user:select-lang"], pageEvents);
     function handleChange(){
         let previousValue = currentValue;
         currentValue = store.getState();
@@ -34,10 +38,8 @@ export function home(req, router){
             homeUpdater(previousValue, currentValue);
           }
     }
-
-
-
-    page.eventsToListen(["user:select-lang"], pageEvents)
+    
+    page.eventsToListen(["user:select-lang", "user:select-theme"], pageEvents)
 
     store.subscribe(handleChange);
 }

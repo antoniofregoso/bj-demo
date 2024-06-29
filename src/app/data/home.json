@@ -26,7 +26,8 @@
             {
                 "id":"header",
                 "brand":{
-                    "src":"https://www.conference.com.mx/web/image/website/3/logo/Conference"
+                    "src":"https://www.conference.com.mx/web/image/website/3/logo/Conference",
+                    "srcDark":"https://www.conference.com.mx/web/image/website/3/logo/Conferencettt"
                 },
                 "i18n":{
                     "lang":{"es":"🇲🇽","en":"🇺🇸","fr":"🇫🇷"}
@@ -35,7 +36,8 @@
             {
                 "id":"footer",
                 "brand":{
-                    "src":"https://www.conference.com.mx/web/image/website/3/logo/Conference"
+                    "src":"https://www.conference.com.mx/web/image/website/3/logo/Conference",
+                    "srcDark":"https://www.conference.com.mx/web/image/website/3/logo/Conference"
                 },
                 "content":{
                     "text":{

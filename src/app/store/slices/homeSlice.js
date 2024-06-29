@@ -1,15 +1,23 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+function getTheme(){
+    if (isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches){
+        return 'dark'
+    }else{
+        return 'light'
+    }
+}
+
+
 const homeSlice = createSlice({
     name: 'home',
     initialState:{
         context:{
             lang:'es',
-            theme:'light'
+            theme: getTheme()
         },
         journey:'attention',
         stage:'idle'
-
     },
     reducers:{
         setLanguaje:(state, action) => {
